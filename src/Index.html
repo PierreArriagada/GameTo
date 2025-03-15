@@ -77,13 +77,13 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
             <div id="c-deportes" class="relative h-48 flex items-center justify-center bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                 <img src="./img/mejores-juegos-deportivos.webp" alt="Deportes" class="absolute inset-0 w-full h-full object-cover filter blur-xs rounded-lg">
-                <a href="#" class="z-10">
+                <a href="./Paginas/sidejuegos.html#deportes" class="z-10">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Deportes</h5>
                 </a>
             </div>
             <div id="c-mundo" class="relative  h-48 flex items-center justify-center bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                 <img src="./img/top10-openworldgames-blogroll-1646922881724_9bt6.1280.webp" alt="Mundo abierto" class="absolute inset-0 w-full h-full object-cover filter blur-xs rounded-lg">
-                <a href="#" class="z-10">
+                <a href="./Paginas/sidejuegos.html#mundo-abierto" class="z-10">
                     <h5 class="mb-2 text-2xl  font-bold tracking-tight text-gray-900 dark:text-white">Mundo abierto</h5>
                 </a>
             </div>
@@ -109,22 +109,6 @@
     </div>
 
   <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const searchForm = document.getElementById('searchForm');
-        const categories = document.getElementById('c-deportes');
 
-        if (searchForm && categories) {
-            searchForm.addEventListener('submit', function(event) {
-                event.preventDefault();
-                console.log('Formulario enviado'); // Mensaje de depuración
-                categories.classList.remove('hidden');
-                console.log('Categorías:', categories.classList); // Verifica las clases del contenedor
-            });
-        } else {
-            console.error('Elementos no encontrados en el DOM');
-        }
-    });
-</script>
 </body>
 </html>
