@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="./Estilos/style.css">
 </head>
 <body>
-
+    
    <div class="container-navbar flex-wrap">
-        <nav class="bg-amber-50 dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+        <nav class="bg-amber-50 dark:bg-gray-900 w-full sticky top-0 z-50 start-0 border-b  border-gray-200 dark:border-gray-600">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="./Index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="./img/juego-en-linea.png" class="h-8" alt="Logo">
@@ -41,9 +41,25 @@
             </div>
         </nav>
    </div>   
-
+   <div class="container-informacion">
+      <header class="bg-gray-800 text-white py-12 relative">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+          <div class="w-full md:w-1/2 text-center md:text-left order-1 md:order-1 md:mr-4">
+            <h1 class="text-4xl font-bold mb-2">
+              <span class="block text-white">Categorias</span>
+              <span class="block text-blue-500">de los juegos</span>
+            </h1>
+          </div>
+          <div class="w-full md:w-1/2 text-center md:text-right order-2 md:order-2 md:ml-4">
+            <p class="text-xl mb-8">
+              Explora nuestro contenido y descubre más. Aquí puedes encontrar una gran variedad de juego en nuestras diferentes categotias, elige una y explora los juegos
+            </p>
+          </div>
+        </div>
+      </header>
+   </div>
    <div class="container-buscar">      
-    <form class="max-w-md mx-auto">   
+    <form id="searchForm" class="max-w-md mx-auto mt-5">   
         <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
         <div class="relative">
             <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -59,31 +75,31 @@
 
     <div class="container-categoria">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
-            <div class="relative h-48 flex items-center justify-center bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <div id="c-deportes" class="relative h-48 flex items-center justify-center bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                 <img src="./img/mejores-juegos-deportivos.webp" alt="Deportes" class="absolute inset-0 w-full h-full object-cover filter blur-xs rounded-lg">
                 <a href="#" class="z-10">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Deportes</h5>
                 </a>
             </div>
-            <div class="relative  h-48 flex items-center justify-center bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <div id="c-mundo" class="relative  h-48 flex items-center justify-center bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                 <img src="./img/top10-openworldgames-blogroll-1646922881724_9bt6.1280.webp" alt="Mundo abierto" class="absolute inset-0 w-full h-full object-cover filter blur-xs rounded-lg">
                 <a href="#" class="z-10">
                     <h5 class="mb-2 text-2xl  font-bold tracking-tight text-gray-900 dark:text-white">Mundo abierto</h5>
                 </a>
             </div>
-            <div class="relative h-48 flex items-center justify-center bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <div id="c-terror" class="relative h-48 flex items-center justify-center bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                 <img src="./img/fran_337595.jpg" alt="Terror" class="absolute inset-0 w-full h-full object-cover filter blur-xs rounded-lg">
                 <a href="#" class="z-10">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Terror</h5>
                 </a>
             </div>
-            <div class="relative h-48 flex items-center justify-center md:col-span-1 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <div id="c-accion" class="relative h-48 flex items-center justify-center md:col-span-1 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                 <img src="./img/mejores-shooters-juegos-disparos-2022-2881625.webp" alt="Accion" class="absolute inset-0 w-full h-full object-cover filter blur-xs rounded-lg">
                 <a href="#" class="z-10">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Accion</h5>
                 </a>
             </div>
-            <div class="relative h-48 flex items-center justify-center md:col-span-1 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <div id="c-carreras" class="relative h-48 flex items-center justify-center md:col-span-1 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                 <img src="./img/unnamed.webp" alt="Carreras" class="absolute inset-0 w-full h-full object-cover filter blur-xs rounded-lg">
                 <a href="#" class="z-10">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Carreras</h5>
@@ -91,7 +107,24 @@
             </div>
         </div>
     </div>
-    
+
   <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchForm = document.getElementById('searchForm');
+        const categories = document.getElementById('c-deportes');
+
+        if (searchForm && categories) {
+            searchForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                console.log('Formulario enviado'); // Mensaje de depuración
+                categories.classList.remove('hidden');
+                console.log('Categorías:', categories.classList); // Verifica las clases del contenedor
+            });
+        } else {
+            console.error('Elementos no encontrados en el DOM');
+        }
+    });
+</script>
 </body>
 </html>
