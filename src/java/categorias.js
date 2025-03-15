@@ -7,3 +7,10 @@ function showCategory(category) {
 
     document.getElementById(category).style.display = 'block';
 }
+
+function showCategoryFromHash() {
+    var hash = window.location.hash.substring(1); // Elimina el '#' del hash
+    if (hash) {
+        showCategory(hash);
+    }
+}
