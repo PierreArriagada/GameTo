@@ -1,3 +1,4 @@
+
 function showCategory(category) {
 
     var categories = document.querySelectorAll('.category');
@@ -9,8 +10,17 @@ function showCategory(category) {
 }
 
 function showCategoryFromHash() {
-    var hash = window.location.hash.substring(1); // Elimina el '#' del hash
+    var hash = window.location.hash.substring(1); 
     if (hash) {
         showCategory(hash);
     }
 }
+
+function openModal() {
+    document.getElementById('modal').classList.remove('hidden');
+  }
+  
+  function closeModal() {
+    document.getElementById('modal').classList.add('hidden');
+  }
+
