@@ -9,7 +9,9 @@ $(document).ready(function () {
         console.log("Errores limpiados.");
     }
 
-
+    //Aqui agregue funciones fuera del valideForm por un error mio, lo habia escrito mal en mi formulario
+    //no me habia dado cuenta que estaba mal escrito, los dejare asi mientras el tiempo no me dio
+    //para solucionarlo, como dicen, mientras funcione no lo muevas y no tengo tiempo
     // Función para validar el teléfono y actualizar el borde (MOVIDA FUERA DE validateForm)
     function validateTelefono() {
         console.log("Función validateTelefono() llamada.");
